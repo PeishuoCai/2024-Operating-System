@@ -1,0 +1,10 @@
+{
+  "targets": {},
+  "headers": {
+    "/workspaces/ece344/ssp/include/ssp.h": {
+      "destination": "{includedir}/ssp.h",
+      "tag": "devel",
+      "subproject": null
+    }
+  }
+}

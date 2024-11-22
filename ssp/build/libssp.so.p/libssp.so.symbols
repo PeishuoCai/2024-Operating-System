@@ -1,0 +1,17 @@
+ 0x000000000000000e (SONAME)             Library soname: [libssp.so]
+check_error T
+__odr_asan.processes B 1
+__odr_asan.reaped_exits B 1
+__odr_asan.reap_size B 1
+__odr_asan.size B 1
+processes B 8
+reap_children T
+reaped_exits B 8
+reap_size B 4
+size B 4
+ssp_create T
+ssp_get_status T
+ssp_init T
+ssp_print T
+ssp_send_signal T
+ssp_wait T

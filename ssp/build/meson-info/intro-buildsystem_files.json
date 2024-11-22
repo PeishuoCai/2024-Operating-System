@@ -1,0 +1,6 @@
+[
+  "/workspaces/ece344/ssp/meson.build",
+  "/workspaces/ece344/ssp/include/meson.build",
+  "/workspaces/ece344/ssp/src/meson.build",
+  "/workspaces/ece344/ssp/tests/meson.build"
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "name": "tps",
+    "id": "tps@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/tps/meson.build",
+    "filename": [
+      "/workspaces/ece344/tps/build/tps"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/tps/build/tps.p",
+          "-I/workspaces/ece344/tps/build",
+          "-I/workspaces/ece344/tps",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-std=gnu17",
+          "-O0",
+          "-g"
+        ],
+        "sources": [
+          "/workspaces/ece344/tps/src/main.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  }
+]

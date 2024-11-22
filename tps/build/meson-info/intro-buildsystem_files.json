@@ -1,0 +1,5 @@
+[
+  "/workspaces/ece344/tps/meson.build",
+  "/workspaces/ece344/tps/src/meson.build",
+  "/workspaces/ece344/tps/tests/meson.build"
+]

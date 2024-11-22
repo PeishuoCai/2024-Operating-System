@@ -1,0 +1,7 @@
+[
+  "/workspaces/ece344/wut/meson.build",
+  "/workspaces/ece344/wut/include/meson.build",
+  "/workspaces/ece344/wut/src/meson.build",
+  "/workspaces/ece344/wut/test/meson.build",
+  "/workspaces/ece344/wut/tests/meson.build"
+]

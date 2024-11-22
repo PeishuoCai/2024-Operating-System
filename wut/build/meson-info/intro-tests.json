@@ -1,0 +1,443 @@
+[
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/main-thread-is-0"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "main-thread-is-0",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@main-thread-is-0@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/first-thread-is-1"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "first-thread-is-1",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@first-thread-is-1@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/main-thread-yields"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "main-thread-yields",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@main-thread-yields@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/first-thread-exits-explicitly"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "first-thread-exits-explicitly",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@first-thread-exits-explicitly@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/first-thread-exits-implicitly"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "first-thread-exits-implicitly",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@first-thread-exits-implicitly@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/first-thread-runs"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "first-thread-runs",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@first-thread-runs@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/main-thread-joins"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "main-thread-joins",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@main-thread-joins@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/first-thread-cancelled"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "first-thread-cancelled",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@first-thread-cancelled@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/thread-in-thread"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "thread-in-thread",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@thread-in-thread@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/two-threads"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "two-threads",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@two-threads@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/reuse-thread-0"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "reuse-thread-0",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@reuse-thread-0@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/error-thread-join-self"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "error-thread-join-self",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@error-thread-join-self@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/error-thread-yield-none"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "error-thread-yield-none",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@error-thread-yield-none@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/rishabh2050"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "rishabh2050",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@rishabh2050@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/rosiepie-1"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "rosiepie-1",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@rosiepie-1@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/rosiepie-2"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "rosiepie-2",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@rosiepie-2@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/lots-of-threads"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "lots-of-threads",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@lots-of-threads@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/even-more-threads"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "even-more-threads",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@even-more-threads@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/fifo-order"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "fifo-order",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@fifo-order@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/student-a"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "student-a",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@student-a@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/workspaces/ece344/wut/build/tests/join-cancelled-thread"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/workspaces/ece344/wut/build/"
+    },
+    "name": "join-cancelled-thread",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "wut"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "59830eb@@join-cancelled-thread@exe"
+    ],
+    "extra_paths": []
+  }
+]

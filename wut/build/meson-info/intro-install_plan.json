@@ -1,0 +1,10 @@
+{
+  "targets": {},
+  "headers": {
+    "/workspaces/ece344/wut/include/wut.h": {
+      "destination": "{includedir}/wut.h",
+      "tag": "devel",
+      "subproject": null
+    }
+  }
+}

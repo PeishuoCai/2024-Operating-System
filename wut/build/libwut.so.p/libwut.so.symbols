@@ -1,0 +1,31 @@
+ 0x000000000000000e (SONAME)             Library soname: [libwut.so]
+arr B 9c40
+compare T
+current_thread_id B 4
+dequeue_thread T
+enqueue_thread T
+exit_context B 3c8
+exit_wrapper T
+free_id B 4
+init_thread_queue T
+main_context B 3c8
+__odr_asan.arr B 1
+__odr_asan.current_thread_id B 1
+__odr_asan.exit_context B 1
+__odr_asan.free_id B 1
+__odr_asan.main_context B 1
+__odr_asan.right_now_context B 1
+__odr_asan.thread_ids B 1
+__odr_asan.thread_numbers B 1
+__odr_asan.thread_queue B 1
+right_now_context B 3c8
+thread_ids B 8
+thread_numbers B 4
+thread_queue B 8
+wut_cancel T
+wut_create T
+wut_exit T
+wut_id T
+wut_init T
+wut_join T
+wut_yield T

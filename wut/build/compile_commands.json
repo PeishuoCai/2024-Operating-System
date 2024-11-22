@@ -1,0 +1,266 @@
+[
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Ilibwut.so.p -I. -I.. -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -fPIC -MD -MQ libwut.so.p/src_wut.c.o -MF libwut.so.p/src_wut.c.o.d -o libwut.so.p/src_wut.c.o -c ../src/wut.c",
+    "file": "../src/wut.c",
+    "output": "libwut.so.p/src_wut.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itest/wut.p -Itest -I../test -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ test/wut.p/main.c.o -MF test/wut.p/main.c.o.d -o test/wut.p/main.c.o -c ../test/main.c",
+    "file": "../test/main.c",
+    "output": "test/wut.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/main-thread-is-0.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/main-thread-is-0.p/main.c.o -MF tests/main-thread-is-0.p/main.c.o.d -o tests/main-thread-is-0.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/main-thread-is-0.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/main-thread-is-0.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/main-thread-is-0.p/main-thread-is-0.c.o -MF tests/main-thread-is-0.p/main-thread-is-0.c.o.d -o tests/main-thread-is-0.p/main-thread-is-0.c.o -c ../tests/main-thread-is-0.c",
+    "file": "../tests/main-thread-is-0.c",
+    "output": "tests/main-thread-is-0.p/main-thread-is-0.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-is-1.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-is-1.p/main.c.o -MF tests/first-thread-is-1.p/main.c.o.d -o tests/first-thread-is-1.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/first-thread-is-1.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-is-1.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-is-1.p/first-thread-is-1.c.o -MF tests/first-thread-is-1.p/first-thread-is-1.c.o.d -o tests/first-thread-is-1.p/first-thread-is-1.c.o -c ../tests/first-thread-is-1.c",
+    "file": "../tests/first-thread-is-1.c",
+    "output": "tests/first-thread-is-1.p/first-thread-is-1.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/main-thread-yields.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/main-thread-yields.p/main.c.o -MF tests/main-thread-yields.p/main.c.o.d -o tests/main-thread-yields.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/main-thread-yields.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/main-thread-yields.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/main-thread-yields.p/main-thread-yields.c.o -MF tests/main-thread-yields.p/main-thread-yields.c.o.d -o tests/main-thread-yields.p/main-thread-yields.c.o -c ../tests/main-thread-yields.c",
+    "file": "../tests/main-thread-yields.c",
+    "output": "tests/main-thread-yields.p/main-thread-yields.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-exits-explicitly.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-exits-explicitly.p/main.c.o -MF tests/first-thread-exits-explicitly.p/main.c.o.d -o tests/first-thread-exits-explicitly.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/first-thread-exits-explicitly.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-exits-explicitly.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-exits-explicitly.p/first-thread-exits-explicitly.c.o -MF tests/first-thread-exits-explicitly.p/first-thread-exits-explicitly.c.o.d -o tests/first-thread-exits-explicitly.p/first-thread-exits-explicitly.c.o -c ../tests/first-thread-exits-explicitly.c",
+    "file": "../tests/first-thread-exits-explicitly.c",
+    "output": "tests/first-thread-exits-explicitly.p/first-thread-exits-explicitly.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-exits-implicitly.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-exits-implicitly.p/main.c.o -MF tests/first-thread-exits-implicitly.p/main.c.o.d -o tests/first-thread-exits-implicitly.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/first-thread-exits-implicitly.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-exits-implicitly.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-exits-implicitly.p/first-thread-exits-implicitly.c.o -MF tests/first-thread-exits-implicitly.p/first-thread-exits-implicitly.c.o.d -o tests/first-thread-exits-implicitly.p/first-thread-exits-implicitly.c.o -c ../tests/first-thread-exits-implicitly.c",
+    "file": "../tests/first-thread-exits-implicitly.c",
+    "output": "tests/first-thread-exits-implicitly.p/first-thread-exits-implicitly.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-runs.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-runs.p/main.c.o -MF tests/first-thread-runs.p/main.c.o.d -o tests/first-thread-runs.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/first-thread-runs.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-runs.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-runs.p/first-thread-runs.c.o -MF tests/first-thread-runs.p/first-thread-runs.c.o.d -o tests/first-thread-runs.p/first-thread-runs.c.o -c ../tests/first-thread-runs.c",
+    "file": "../tests/first-thread-runs.c",
+    "output": "tests/first-thread-runs.p/first-thread-runs.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/main-thread-joins.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/main-thread-joins.p/main.c.o -MF tests/main-thread-joins.p/main.c.o.d -o tests/main-thread-joins.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/main-thread-joins.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/main-thread-joins.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/main-thread-joins.p/main-thread-joins.c.o -MF tests/main-thread-joins.p/main-thread-joins.c.o.d -o tests/main-thread-joins.p/main-thread-joins.c.o -c ../tests/main-thread-joins.c",
+    "file": "../tests/main-thread-joins.c",
+    "output": "tests/main-thread-joins.p/main-thread-joins.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-cancelled.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-cancelled.p/main.c.o -MF tests/first-thread-cancelled.p/main.c.o.d -o tests/first-thread-cancelled.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/first-thread-cancelled.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/first-thread-cancelled.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/first-thread-cancelled.p/first-thread-cancelled.c.o -MF tests/first-thread-cancelled.p/first-thread-cancelled.c.o.d -o tests/first-thread-cancelled.p/first-thread-cancelled.c.o -c ../tests/first-thread-cancelled.c",
+    "file": "../tests/first-thread-cancelled.c",
+    "output": "tests/first-thread-cancelled.p/first-thread-cancelled.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/thread-in-thread.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/thread-in-thread.p/main.c.o -MF tests/thread-in-thread.p/main.c.o.d -o tests/thread-in-thread.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/thread-in-thread.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/thread-in-thread.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/thread-in-thread.p/thread-in-thread.c.o -MF tests/thread-in-thread.p/thread-in-thread.c.o.d -o tests/thread-in-thread.p/thread-in-thread.c.o -c ../tests/thread-in-thread.c",
+    "file": "../tests/thread-in-thread.c",
+    "output": "tests/thread-in-thread.p/thread-in-thread.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/two-threads.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/two-threads.p/main.c.o -MF tests/two-threads.p/main.c.o.d -o tests/two-threads.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/two-threads.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/two-threads.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/two-threads.p/two-threads.c.o -MF tests/two-threads.p/two-threads.c.o.d -o tests/two-threads.p/two-threads.c.o -c ../tests/two-threads.c",
+    "file": "../tests/two-threads.c",
+    "output": "tests/two-threads.p/two-threads.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/reuse-thread-0.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/reuse-thread-0.p/main.c.o -MF tests/reuse-thread-0.p/main.c.o.d -o tests/reuse-thread-0.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/reuse-thread-0.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/reuse-thread-0.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/reuse-thread-0.p/reuse-thread-0.c.o -MF tests/reuse-thread-0.p/reuse-thread-0.c.o.d -o tests/reuse-thread-0.p/reuse-thread-0.c.o -c ../tests/reuse-thread-0.c",
+    "file": "../tests/reuse-thread-0.c",
+    "output": "tests/reuse-thread-0.p/reuse-thread-0.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/error-thread-join-self.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/error-thread-join-self.p/main.c.o -MF tests/error-thread-join-self.p/main.c.o.d -o tests/error-thread-join-self.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/error-thread-join-self.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/error-thread-join-self.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/error-thread-join-self.p/error-thread-join-self.c.o -MF tests/error-thread-join-self.p/error-thread-join-self.c.o.d -o tests/error-thread-join-self.p/error-thread-join-self.c.o -c ../tests/error-thread-join-self.c",
+    "file": "../tests/error-thread-join-self.c",
+    "output": "tests/error-thread-join-self.p/error-thread-join-self.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/error-thread-yield-none.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/error-thread-yield-none.p/main.c.o -MF tests/error-thread-yield-none.p/main.c.o.d -o tests/error-thread-yield-none.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/error-thread-yield-none.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/error-thread-yield-none.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/error-thread-yield-none.p/error-thread-yield-none.c.o -MF tests/error-thread-yield-none.p/error-thread-yield-none.c.o.d -o tests/error-thread-yield-none.p/error-thread-yield-none.c.o -c ../tests/error-thread-yield-none.c",
+    "file": "../tests/error-thread-yield-none.c",
+    "output": "tests/error-thread-yield-none.p/error-thread-yield-none.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/rishabh2050.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/rishabh2050.p/main.c.o -MF tests/rishabh2050.p/main.c.o.d -o tests/rishabh2050.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/rishabh2050.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/rishabh2050.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/rishabh2050.p/rishabh2050.c.o -MF tests/rishabh2050.p/rishabh2050.c.o.d -o tests/rishabh2050.p/rishabh2050.c.o -c ../tests/rishabh2050.c",
+    "file": "../tests/rishabh2050.c",
+    "output": "tests/rishabh2050.p/rishabh2050.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/rosiepie-1.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/rosiepie-1.p/main.c.o -MF tests/rosiepie-1.p/main.c.o.d -o tests/rosiepie-1.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/rosiepie-1.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/rosiepie-1.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/rosiepie-1.p/rosiepie-1.c.o -MF tests/rosiepie-1.p/rosiepie-1.c.o.d -o tests/rosiepie-1.p/rosiepie-1.c.o -c ../tests/rosiepie-1.c",
+    "file": "../tests/rosiepie-1.c",
+    "output": "tests/rosiepie-1.p/rosiepie-1.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/rosiepie-2.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/rosiepie-2.p/main.c.o -MF tests/rosiepie-2.p/main.c.o.d -o tests/rosiepie-2.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/rosiepie-2.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/rosiepie-2.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/rosiepie-2.p/rosiepie-2.c.o -MF tests/rosiepie-2.p/rosiepie-2.c.o.d -o tests/rosiepie-2.p/rosiepie-2.c.o -c ../tests/rosiepie-2.c",
+    "file": "../tests/rosiepie-2.c",
+    "output": "tests/rosiepie-2.p/rosiepie-2.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/lots-of-threads.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/lots-of-threads.p/main.c.o -MF tests/lots-of-threads.p/main.c.o.d -o tests/lots-of-threads.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/lots-of-threads.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/lots-of-threads.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/lots-of-threads.p/lots-of-threads.c.o -MF tests/lots-of-threads.p/lots-of-threads.c.o.d -o tests/lots-of-threads.p/lots-of-threads.c.o -c ../tests/lots-of-threads.c",
+    "file": "../tests/lots-of-threads.c",
+    "output": "tests/lots-of-threads.p/lots-of-threads.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/even-more-threads.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/even-more-threads.p/main.c.o -MF tests/even-more-threads.p/main.c.o.d -o tests/even-more-threads.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/even-more-threads.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/even-more-threads.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/even-more-threads.p/even-more-threads.c.o -MF tests/even-more-threads.p/even-more-threads.c.o.d -o tests/even-more-threads.p/even-more-threads.c.o -c ../tests/even-more-threads.c",
+    "file": "../tests/even-more-threads.c",
+    "output": "tests/even-more-threads.p/even-more-threads.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/fifo-order.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/fifo-order.p/main.c.o -MF tests/fifo-order.p/main.c.o.d -o tests/fifo-order.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/fifo-order.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/fifo-order.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/fifo-order.p/fifo-order.c.o -MF tests/fifo-order.p/fifo-order.c.o.d -o tests/fifo-order.p/fifo-order.c.o -c ../tests/fifo-order.c",
+    "file": "../tests/fifo-order.c",
+    "output": "tests/fifo-order.p/fifo-order.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/student-a.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/student-a.p/main.c.o -MF tests/student-a.p/main.c.o.d -o tests/student-a.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/student-a.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/student-a.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/student-a.p/student-a.c.o -MF tests/student-a.p/student-a.c.o.d -o tests/student-a.p/student-a.c.o -c ../tests/student-a.c",
+    "file": "../tests/student-a.c",
+    "output": "tests/student-a.p/student-a.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/join-cancelled-thread.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/join-cancelled-thread.p/main.c.o -MF tests/join-cancelled-thread.p/main.c.o.d -o tests/join-cancelled-thread.p/main.c.o -c ../tests/main.c",
+    "file": "../tests/main.c",
+    "output": "tests/join-cancelled-thread.p/main.c.o"
+  },
+  {
+    "directory": "/workspaces/ece344/wut/build",
+    "command": "cc -Itests/join-cancelled-thread.p -Itests -I../tests -Iinclude -I../include -fdiagnostics-color=always -fsanitize=address -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c17 -O0 -g -D_DEFAULT_SOURCE -MD -MQ tests/join-cancelled-thread.p/join-cancelled-thread.c.o -MF tests/join-cancelled-thread.p/join-cancelled-thread.c.o.d -o tests/join-cancelled-thread.p/join-cancelled-thread.c.o -c ../tests/join-cancelled-thread.c",
+    "file": "../tests/join-cancelled-thread.c",
+    "output": "tests/join-cancelled-thread.p/join-cancelled-thread.c.o"
+  }
+]

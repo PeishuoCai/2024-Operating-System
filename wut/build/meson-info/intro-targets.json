@@ -1,0 +1,1426 @@
+[
+  {
+    "name": "wut",
+    "id": "wut@sha",
+    "type": "shared library",
+    "defined_in": "/workspaces/ece344/wut/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/libwut.so"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/libwut.so.p",
+          "-I/workspaces/ece344/wut/build",
+          "-I/workspaces/ece344/wut",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE",
+          "-fPIC"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/src/wut.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-shared",
+          "-fPIC",
+          "-Wl,-soname,libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wut",
+    "id": "9f86d08@@wut@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/test/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/test/wut"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/test/wut.p",
+          "-I/workspaces/ece344/wut/build/test",
+          "-I/workspaces/ece344/wut/test",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/test/main.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "main-thread-is-0",
+    "id": "59830eb@@main-thread-is-0@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/main-thread-is-0"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/main-thread-is-0.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/main-thread-is-0.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "first-thread-is-1",
+    "id": "59830eb@@first-thread-is-1@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/first-thread-is-1"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/first-thread-is-1.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/first-thread-is-1.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "main-thread-yields",
+    "id": "59830eb@@main-thread-yields@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/main-thread-yields"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/main-thread-yields.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/main-thread-yields.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "first-thread-exits-explicitly",
+    "id": "59830eb@@first-thread-exits-explicitly@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/first-thread-exits-explicitly"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/first-thread-exits-explicitly.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/first-thread-exits-explicitly.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "first-thread-exits-implicitly",
+    "id": "59830eb@@first-thread-exits-implicitly@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/first-thread-exits-implicitly"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/first-thread-exits-implicitly.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/first-thread-exits-implicitly.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "first-thread-runs",
+    "id": "59830eb@@first-thread-runs@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/first-thread-runs"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/first-thread-runs.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/first-thread-runs.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "main-thread-joins",
+    "id": "59830eb@@main-thread-joins@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/main-thread-joins"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/main-thread-joins.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/main-thread-joins.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "first-thread-cancelled",
+    "id": "59830eb@@first-thread-cancelled@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/first-thread-cancelled"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/first-thread-cancelled.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/first-thread-cancelled.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "thread-in-thread",
+    "id": "59830eb@@thread-in-thread@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/thread-in-thread"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/thread-in-thread.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/thread-in-thread.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "two-threads",
+    "id": "59830eb@@two-threads@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/two-threads"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/two-threads.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/two-threads.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "reuse-thread-0",
+    "id": "59830eb@@reuse-thread-0@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/reuse-thread-0"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/reuse-thread-0.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/reuse-thread-0.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "error-thread-join-self",
+    "id": "59830eb@@error-thread-join-self@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/error-thread-join-self"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/error-thread-join-self.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/error-thread-join-self.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "error-thread-yield-none",
+    "id": "59830eb@@error-thread-yield-none@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/error-thread-yield-none"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/error-thread-yield-none.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/error-thread-yield-none.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "rishabh2050",
+    "id": "59830eb@@rishabh2050@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/rishabh2050"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/rishabh2050.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/rishabh2050.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "rosiepie-1",
+    "id": "59830eb@@rosiepie-1@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/rosiepie-1"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/rosiepie-1.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/rosiepie-1.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "rosiepie-2",
+    "id": "59830eb@@rosiepie-2@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/rosiepie-2"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/rosiepie-2.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/rosiepie-2.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "lots-of-threads",
+    "id": "59830eb@@lots-of-threads@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/lots-of-threads"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/lots-of-threads.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/lots-of-threads.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "even-more-threads",
+    "id": "59830eb@@even-more-threads@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/even-more-threads"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/even-more-threads.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/even-more-threads.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "fifo-order",
+    "id": "59830eb@@fifo-order@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/fifo-order"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/fifo-order.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/fifo-order.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "student-a",
+    "id": "59830eb@@student-a@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/student-a"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/student-a.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/student-a.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "join-cancelled-thread",
+    "id": "59830eb@@join-cancelled-thread@exe",
+    "type": "executable",
+    "defined_in": "/workspaces/ece344/wut/tests/meson.build",
+    "filename": [
+      "/workspaces/ece344/wut/build/tests/join-cancelled-thread"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/workspaces/ece344/wut/build/tests/join-cancelled-thread.p",
+          "-I/workspaces/ece344/wut/build/tests",
+          "-I/workspaces/ece344/wut/tests",
+          "-I/workspaces/ece344/wut/build/include",
+          "-I/workspaces/ece344/wut/include",
+          "-fdiagnostics-color=always",
+          "-fsanitize=address",
+          "-fno-omit-frame-pointer",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c17",
+          "-O0",
+          "-g",
+          "-D_DEFAULT_SOURCE"
+        ],
+        "sources": [
+          "/workspaces/ece344/wut/tests/main.c",
+          "/workspaces/ece344/wut/tests/join-cancelled-thread.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-fsanitize=address",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,-rpath-link,/workspaces/ece344/wut/build/",
+          "libwut.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  }
+]

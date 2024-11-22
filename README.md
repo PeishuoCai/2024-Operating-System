@@ -1,3 +1,3 @@
-# 2024 Fall ECE 344 Student Repository
+# 2024 Fall Operating Systems Repository
 
-This repository contains the lab solutions for a student.
+This repository contains the main ideas behind the Linux OS, represented through projects built in C, and validated in Python.
